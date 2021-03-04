@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewBookActivity">
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:text="도서 조회 결과"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vbrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="브랜드"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/vbkName"
+        app:layout_constraintStart_toStartOf="@+id/vbkName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vregDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginBottom="50dp"
+        android:text="등록일"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vprice" />
+
+    <TextView
+        android:id="@+id/vbkName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="도서명"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/vauthor"
+        app:layout_constraintStart_toStartOf="@+id/vauthor"
+        app:layout_constraintTop_toBottomOf="@+id/vbrand" />
+
+    <TextView
+        android:id="@+id/vauthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="저자"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/vpubDate"
+        app:layout_constraintStart_toStartOf="@+id/vpubDate"
+        app:layout_constraintTop_toBottomOf="@+id/vbkName" />
+
+    <TextView
+        android:id="@+id/vprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="가격"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/vregDate"
+        app:layout_constraintStart_toStartOf="@+id/vregDate"
+        app:layout_constraintTop_toBottomOf="@+id/vpubDate" />
+
+    <TextView
+        android:id="@+id/vpubDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="출판일"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/vprice"
+        app:layout_constraintStart_toStartOf="@+id/vprice"
+        app:layout_constraintTop_toBottomOf="@+id/vauthor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
